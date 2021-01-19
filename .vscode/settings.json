@@ -1,0 +1,12 @@
+{
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": false,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true
+    },
+}

@@ -1,0 +1,1 @@
+export const tableColumnStateSelector = tableId => state => state.columnState[tableId]?.columnState;

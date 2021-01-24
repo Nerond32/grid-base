@@ -1,14 +1,21 @@
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import store from '@store';
-import Grid from '@components/Generic/Grid/Grid';
+import Cars from '@components/Subpages/Cars/Cars';
+import Scores from '@components/Subpages/Scores/Scores';
 import Header from '@components/Header/Header';
 import './App.css';
 
 const App = () => {
     return (
         <Provider store={store}>
-            <Header />
-            <Grid />
+            <Router>
+                <Header />
+                <Switch>
+                    <Route path='/cars'><Cars /></Route>
+                    <Route path='/scores'><Scores /></Route>
+                </Switch>
+            </Router>
         </Provider>
     );
 }

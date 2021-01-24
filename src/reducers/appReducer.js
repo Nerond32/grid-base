@@ -9,9 +9,10 @@ const appReducer = (state = initialState, action) => {
         case appActions.SET_SELECTED_TAB: {
             return {
                 ...state,
-                selectedTab: action.tabName
+                selectedTab: action.tabName,
             };
         }
+
         default:
             return state;
     }

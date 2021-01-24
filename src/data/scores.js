@@ -2,6 +2,7 @@ import generator from './generator';
 
 const scoresSchema = {
     name: '{{name.firstName}} {{name.lastName}}',
+    score: '{{random.number}}',
     country: '{{address.country}}',
     sponsor: '{{company.companyName}}',
     gender: '{{name.gender}}',

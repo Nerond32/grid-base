@@ -4,8 +4,7 @@ export const isShowTransOnlySelector = state => state.scores.isShowTransOnly;
 export const scoreRowsSelector = state => state.scores.scoreRows;
 
 export const filteredScoreRowsSelector = createSelector(
-    isShowTransOnlySelector,
-    scoreRowsSelector,
+    [isShowTransOnlySelector, scoreRowsSelector],
     (isHide, scoreRows) => {
         if (!isHide) {
             return scoreRows;

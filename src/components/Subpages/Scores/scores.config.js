@@ -3,6 +3,7 @@ import HideColumnHeader from '@components/Generic/Grid/HideColumnHeader/HideColu
 export const createColumnDefs = (isShowTransOnly, setIsShowTransOnly) => {
     const columnDefs = [
         { headerName: 'Name', field: 'name' },
+        { headerName: 'Score', field: 'score' },
         { headerName: 'Country', field: 'country' },
         { headerName: 'Sponsor', field: 'sponsor' },
         {
